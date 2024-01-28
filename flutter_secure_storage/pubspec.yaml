@@ -31,16 +31,32 @@ dependencies:
   # implementation constraints as "any". We cannot do it right now as it fails pub publish
   # validation, so we set a ^ constraint.
   # https://github.com/flutter/flutter/issues/46264
-  flutter_secure_storage_linux: ^1.1.3
-  flutter_secure_storage_macos: ^3.0.0
+  flutter_secure_storage_linux:
+    git:
+      url: https://github.com/lyokato/flutter_secure_storage
+      path: flutter_secure_storage_linux
+      ref: dependency_modified
+  flutter_secure_storage_macos:
+    git:
+      url: https://github.com/lyokato/flutter_secure_storage
+      path: flutter_secure_storage_macos
+      ref: dependency_modified
   flutter_secure_storage_platform_interface:
     git:
       url: https://github.com/lyokato/flutter_secure_storage
       path: flutter_secure_storage_platform_interface
       ref: dependency_modified
 
-  flutter_secure_storage_web: ^1.1.1
-  flutter_secure_storage_windows: ^3.0.0
+  flutter_secure_storage_web:
+    git:
+      url: https://github.com/lyokato/flutter_secure_storage
+      path: flutter_secure_storage_web
+      ref: dependency_modified
+  flutter_secure_storage_windows:
+    git:
+      url: https://github.com/lyokato/flutter_secure_storage
+      path: flutter_secure_storage_windows
+      ref: dependency_modified
   meta: ^1.3.0
 
 dev_dependencies:

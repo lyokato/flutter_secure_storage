@@ -10,7 +10,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_secure_storage_platform_interface: ^1.0.1
+  flutter_secure_storage_platform_interface:
+    git:
+      url: https://github.com/lyokato/flutter_secure_storage
+      path: flutter_secure_storage_platform_interface
+      ref: dependency_modified
 
 flutter:
   plugin:
